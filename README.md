@@ -3,10 +3,28 @@ This project deals with image compression using a FC net overfitted on the image
 
 Full project report is in *add path to pdf once finished*
 
+## Installation
+First, clone the project to your local machine:
+```
+git clone https://github.com/nmd95/Neural_Image_Compression_With_Implicit_Representations.git
+```
+
+Next, make sure to install the dependencies. You can either install them to your global folder or create a conda environment.
+
+**Install to your global folder**
+```
+pip install -r requirements.txt
+```
+
+**Create conda environment**
+```
+conda env create -f environment.yml
+```
+
 ## Usage
 In order to run ```compress.py``` you should run the following code:
 ```
-python compress.py --img-path img_path --save-path output_path --pruning-rates-list rates_list --epochs-per-prune-list epochs_list --num-layers number_of_layers --layer-width layer_width
+python copmress.py --img-path img_path --save-path output_path --pruning-rates-list rates_list --epochs-per-prune-list epochs_list --num-layers number_of_layers --layer-width layer_width
 ```
 Where: 
 
